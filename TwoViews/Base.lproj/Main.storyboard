@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,19 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEd-qh-boG">
-                                <rect key="frame" x="32" y="44" width="350" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="MEd-qh-boG">
+                                <rect key="frame" x="20" y="44" width="374" height="400"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfl-bB-PvQ">
-                                <rect key="frame" x="32" y="429" width="350" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Zfl-bB-PvQ">
+                                <rect key="frame" x="20" y="468" width="374" height="400"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MEd-qh-boG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4PR-2W-TH4"/>
+                            <constraint firstItem="MEd-qh-boG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EVy-tc-OWO"/>
+                            <constraint firstAttribute="bottom" secondItem="Zfl-bB-PvQ" secondAttribute="bottom" constant="28" id="XCX-G9-QPy"/>
+                            <constraint firstItem="Zfl-bB-PvQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c1E-7D-rsX"/>
+                            <constraint firstItem="Zfl-bB-PvQ" firstAttribute="height" secondItem="MEd-qh-boG" secondAttribute="height" id="nq5-6Y-L18"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MEd-qh-boG" secondAttribute="trailing" constant="20" id="o6o-zr-ZgM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zfl-bB-PvQ" secondAttribute="trailing" constant="20" id="p9q-cQ-J6R"/>
+                            <constraint firstItem="Zfl-bB-PvQ" firstAttribute="top" secondItem="MEd-qh-boG" secondAttribute="bottom" constant="24" id="uIS-sw-w7E"/>
+                            <constraint firstItem="Zfl-bB-PvQ" firstAttribute="width" secondItem="MEd-qh-boG" secondAttribute="width" id="uRg-ex-70P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
